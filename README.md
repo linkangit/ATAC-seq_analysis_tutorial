@@ -53,7 +53,7 @@ wget https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg38-blacklist.v2.b
 gunzip hg38-blacklist.v2.bed.gz
 ```
 
-## 3. Data Quality Control {#quality-control}
+## 3. Data Quality Control
 
 ### Initial FastQC Analysis
 ```bash
