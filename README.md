@@ -1,6 +1,6 @@
 # Complete ATAC-seq Analysis and Visualization Tutorial
 
-## 1. Introduction to ATAC-seq {#introduction}
+## 1. Introduction to ATAC-seq
 
 ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) is a method for studying chromatin accessibility genome-wide. The technique uses a hyperactive Tn5 transposase to insert sequencing adapters into accessible chromatin regions, allowing identification of open chromatin and transcription factor binding sites.
 
@@ -10,7 +10,7 @@ ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) is a meth
 - **Insert size distribution**: Characteristic pattern reflecting nucleosome positioning
 - **TSS enrichment**: Measure of signal quality around transcription start sites
 
-## 2. Prerequisites and Setup {#prerequisites}
+## 2. Prerequisites and Setup
 
 ### Required Software
 ```bash
@@ -82,7 +82,7 @@ done
 fastqc trimmed/*_paired.fastq.gz -o fastqc/
 ```
 
-## 4. Read Alignment {#alignment}
+## 4. Read Alignment
 
 ### Bowtie2 Alignment
 ```bash
@@ -113,7 +113,7 @@ done
 multiqc aligned/ -o aligned/
 ```
 
-## 5. Post-alignment Processing {#post-alignment}
+## 5. Post-alignment Processing
 
 ### Remove Low-Quality and Mitochondrial Reads
 ```bash
@@ -176,7 +176,7 @@ for bam in aligned/*_final.bam; do
 done
 ```
 
-## 6. Peak Calling {#peak-calling}
+## 6. Peak Calling
 
 ### MACS3 Peak Calling
 ```bash
@@ -221,7 +221,7 @@ for bam in aligned/*_shifted.bam; do
 done
 ```
 
-## 7. Quality Assessment {#quality-assessment}
+## 7. Quality Assessment
 
 ### TSS Enrichment Analysis
 ```bash
@@ -297,7 +297,7 @@ for bam in aligned/*_shifted.bam; do
 done
 ```
 
-## 8. Differential Accessibility Analysis {#differential-analysis}
+## 8. Differential Accessibility Analysis
 
 ### Create Count Matrix
 ```bash
@@ -395,7 +395,7 @@ EOF
 Rscript differential_analysis.R
 ```
 
-## 9. Visualization {#visualization}
+## 9. Visualization
 
 ### Heatmaps of Peak Regions
 ```bash
@@ -464,7 +464,7 @@ EOF
 Rscript annotate_peaks.R
 ```
 
-## 10. Advanced Analysis {#advanced-analysis}
+## 10. Advanced Analysis
 
 ### Motif Analysis
 ```bash
@@ -535,7 +535,7 @@ EOF
 Rscript pathway_analysis.R
 ```
 
-## 11. Troubleshooting {#troubleshooting}
+## 11. Troubleshooting
 
 ### Common Issues and Solutions
 
