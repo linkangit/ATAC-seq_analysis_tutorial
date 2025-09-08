@@ -568,18 +568,6 @@ Rscript pathway_analysis.R
 - Duplication rate < 25%
 - Mitochondrial reads < 10%
 
-### Memory and Performance Tips
-
-```bash
-# For large datasets, consider using more memory-efficient tools
-# Use sambamba instead of samtools for some operations
-# Parallelize processing where possible
-# Use appropriate thread numbers based on available cores
-
-# Example with increased memory
-export JAVA_OPTS="-Xmx32G"
-```
-
 ## Summary
 
 This tutorial covers the complete ATAC-seq analysis pipeline from raw reads to biological insights. Key steps include quality control, alignment, peak calling, differential analysis, and visualization. Always validate results with appropriate quality control metrics and consider the biological context when interpreting findings.
