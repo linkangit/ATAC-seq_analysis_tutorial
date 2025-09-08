@@ -1,18 +1,5 @@
 # Complete ATAC-seq Analysis and Visualization Tutorial
 
-## Table of Contents
-1. [Introduction to ATAC-seq](#introduction)
-2. [Prerequisites and Setup](#prerequisites)
-3. [Data Quality Control](#quality-control)
-4. [Read Alignment](#alignment)
-5. [Post-alignment Processing](#post-alignment)
-6. [Peak Calling](#peak-calling)
-7. [Quality Assessment](#quality-assessment)
-8. [Differential Accessibility Analysis](#differential-analysis)
-9. [Visualization](#visualization)
-10. [Advanced Analysis](#advanced-analysis)
-11. [Troubleshooting](#troubleshooting)
-
 ## 1. Introduction to ATAC-seq {#introduction}
 
 ATAC-seq (Assay for Transposase-Accessible Chromatin using sequencing) is a method for studying chromatin accessibility genome-wide. The technique uses a hyperactive Tn5 transposase to insert sequencing adapters into accessible chromatin regions, allowing identification of open chromatin and transcription factor binding sites.
